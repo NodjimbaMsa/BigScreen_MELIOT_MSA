@@ -111,11 +111,7 @@
   </header>
 
   <main class="px-3">
-    <h1>Quizz</h1>
-    <p class="lead">Div for quiz questions welcom view</p>
-    <p class="lead">
-      
-    </p>
+  @yield("contenu")
   </main>
 
   <footer class="mt-auto text-white-50">
