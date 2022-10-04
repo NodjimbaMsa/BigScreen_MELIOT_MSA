@@ -23,7 +23,7 @@
               <span data-feather="shopping-cart" class="align-text-bottom"></span>
               page 2
             </a>
-          
+          </li>
         </ul>
     </div>
 </nav>
