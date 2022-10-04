@@ -6,17 +6,14 @@ use App\Models\Scopes\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Question extends Model
+class QuestionResponse extends Model
 {
     use HasFactory;
     use Searchable;
 
-    protected $fillable = ['order', 'title', 'type', 'slug '];
+    protected $fillable = [];
 
     protected $searchableFields = ['*'];
 
-    public function responses()
-    {
-        return $this->hasMany(Response::class);
-    }
+    protected $table = 'question_responses';
 }
