@@ -129,24 +129,25 @@
                         @else
                         <li class="navL">
             <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home" class="align-text-bottom"></span>
+              <span data-feather="bar-chart" class="align-text-bottom"></span>
               Dashboard
             </a>
           </li>
           <li class="navL">
             <a class="nav-link" href="#">
               <span data-feather="file" class="align-text-bottom"></span>
-              page 1
+              Results
             </a>
           </li>
           <li class="navL">
             <a class="nav-link" href="#">
-              <span data-feather="shopping-cart" class="align-text-bottom"></span>
-              page 2
+              <span data-feather="help-circle" class="align-text-bottom"></span>
+              Questions
             </a>
           </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <span data-feather="log-out" class="align-text-bottom"></span>
                                     {{ Auth::user()->name }}
                                 </a>
 

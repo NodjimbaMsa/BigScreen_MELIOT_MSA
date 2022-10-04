@@ -8,25 +8,27 @@
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home" class="align-text-bottom"></span>
+              <span data-feather="bar-chart" class="align-text-bottom"></span>
               Dashboard
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
+            
               <span data-feather="file" class="align-text-bottom"></span>
-              page 1
+              Results 
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="shopping-cart" class="align-text-bottom"></span>
-              page 2
+              <span data-feather="help-circle" class="align-text-bottom"></span>
+              Questions
             </a>
           </li>
         </ul>
     </div>
 </nav>
+
 
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">

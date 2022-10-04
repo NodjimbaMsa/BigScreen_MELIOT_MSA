@@ -51,3 +51,7 @@
     }
   })
 })()
+// ICONS
+help-circle.replace()
+bar-chart.replace()
+log-out.replace()
