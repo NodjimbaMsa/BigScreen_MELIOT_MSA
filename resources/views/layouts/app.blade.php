@@ -128,19 +128,19 @@
                             @endif
                         @else
                         <li class="navL">
-            <a class="nav-link active" aria-current="page" href="#">
+            <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">
               <span data-feather="bar-chart" class="align-text-bottom"></span>
               Dashboard
             </a>
           </li>
           <li class="navL">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/admin/results">
               <span data-feather="file" class="align-text-bottom"></span>
               Results
             </a>
           </li>
           <li class="navL">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/admin/questions">
               <span data-feather="help-circle" class="align-text-bottom"></span>
               Questions
             </a>
@@ -169,7 +169,42 @@
             </div>
         </div>
     </header>
+<div class="container1-fluid">
+<div class="row">
+
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}" id="nav1">
+              <span data-feather="bar-chart" class="align-text-bottom"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/results" id="nav2">
+            
+              <span data-feather="file" class="align-text-bottom"></span>
+              Results 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/questions" id="nav3">
+              <span data-feather="help-circle"  class="align-text-bottom"></span>
+              Questions
+            </a>
+          </li>
+        </ul>
+    </div>
+</nav>
     
     @yield('content')
+  </div>
+</div>
+<script src="" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+<script src="{{asset('js/dashboard.js')}}"></script>
+</body>
 </html>
