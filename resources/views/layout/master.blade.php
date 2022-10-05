@@ -91,7 +91,7 @@
     <div>
       <h3 class="float-md-start ">BigScreen</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/">Home</a>
+        <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/">Home</a>
         <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/results">Results</a>
         @if (Route::has('login'))
                 
