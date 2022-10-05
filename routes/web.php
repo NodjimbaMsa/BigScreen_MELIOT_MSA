@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('layout/master');});
+// Route::get('/', function () {return view('layout/master');});
+Route::get('/', function () {return view('quizzPublic');});
 Route::get('/results', function () {return view('resultPublic');});
 
 Route::get('/admin/results', [App\Http\Controllers\HomeController::class, 'resultAdmin'])->name('resultAdmin');

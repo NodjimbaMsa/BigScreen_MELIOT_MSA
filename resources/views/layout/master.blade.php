@@ -83,6 +83,7 @@
     
     <!-- Custom styles for this template -->
     <link href="{{asset('css/cover.css')}}" rel="stylesheet">
+    <link href="{{asset('css/questionsPublic.css')}}" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
     
@@ -91,7 +92,7 @@
     <div>
       <h3 class="float-md-start ">BigScreen</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/">Home</a>
+        <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/">Home</a>
         <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/results">Results</a>
         @if (Route::has('login'))
                 
@@ -122,9 +123,7 @@
     <p>Quiz BigScreen , by <a href="https://github.com/sebastianmel" class="text-white">Sébastian & Nojimba</a>.</p>
   </footer>
 </div>
-
-
-    
+<script src="{{asset('js/questionsPublic.js')}}"></script>
   </body>
 </html>
 
