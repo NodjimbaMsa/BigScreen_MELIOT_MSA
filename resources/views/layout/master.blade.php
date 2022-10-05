@@ -83,6 +83,7 @@
     
     <!-- Custom styles for this template -->
     <link href="{{asset('css/cover.css')}}" rel="stylesheet">
+    <link href="{{asset('css/questionsPublic.css')}}" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
     
@@ -122,9 +123,7 @@
     <p>Quiz BigScreen , by <a href="https://github.com/sebastianmel" class="text-white">Sébastian & Nojimba</a>.</p>
   </footer>
 </div>
-
-
-    
+<script src="{{asset('js/questionsPublic.js')}}"></script>
   </body>
 </html>
 
