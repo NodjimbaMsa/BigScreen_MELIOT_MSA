@@ -15,7 +15,7 @@
 
     
 
-<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"  crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -92,6 +92,7 @@
       <h3 class="float-md-start mb-0">BigScreen</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/results">Results</a>
         @if (Route::has('login'))
                 
                     @auth
