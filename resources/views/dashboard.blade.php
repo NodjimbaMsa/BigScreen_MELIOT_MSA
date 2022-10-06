@@ -17,9 +17,28 @@
       </div>
 
       <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
-      <div id="wrapper">
-        <canvas class="my-4 w-100" id="myChart" width="900" height="350"></canvas>
+      
+      
+      <div class="d-flex justify-content-around flex-wrap flex-md-nowrap" >
+        <div class="wrapper">
+          <canvas class="my-4 w-100" id="pie1" width="" height="350" aria-label="Hello ARIA World" role="img"></canvas>
+        </div>
+        <div class="wrapper">
+          <canvas class="my-4 w-100" id="pie2" width="" height="350" aria-label="Hello ARIA World" role="img"></canvas>
+        </div>
       </div>
+      
+      <div class="d-flex justify-content-around flex-wrap flex-md-nowrap">
+        <div id="wrapper">
+          <canvas class="my-4 w-100" id="pie3" width="" height="350" aria-label="Hello ARIA World" role="img"></canvas>
+        </div>
+        <div id="wrapper">
+          <canvas class="my-4 w-100" id="radar1" width="" height="350" aria-label="Hello ARIA World" role="img"></canvas>
+        </div>
+        
+      </div>
+      
+      
 
 
       <br>

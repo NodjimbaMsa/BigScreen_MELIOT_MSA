@@ -1,6 +1,11 @@
 body {
   font-size: .875rem;
 }
+#wrapper{
+  width: 50%;
+  
+}
+
 
 .feather {
   width: 16px;
