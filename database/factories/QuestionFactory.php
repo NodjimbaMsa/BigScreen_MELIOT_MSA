@@ -18,8 +18,8 @@ class QuestionFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->sentence($nbWords = 6, $variableNbWords = true)+"?",
-            'type' => $this->faker->randomElement($array = array ('a','b','c')),
+            'title' => $this->faker->sentence($nbWords = 6, $variableNbWords = true),
+            'type' => $this->faker->randomElement($array = array ('1','2','3')),
         ];
     }
 }

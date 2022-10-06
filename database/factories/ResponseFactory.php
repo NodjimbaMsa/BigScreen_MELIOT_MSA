@@ -19,6 +19,7 @@ class ResponseFactory extends Factory
     {
         return [
             'response_text' => $this->faker->word,
+            'question_id'=>\App\Models\Question::factory(),
         ];
        
     }

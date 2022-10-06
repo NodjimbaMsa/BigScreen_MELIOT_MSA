@@ -11,7 +11,7 @@ class Question extends Model
     use HasFactory;
     use Searchable;
 
-    protected $fillable = ['order', 'title', 'type', 'slug '];
+    protected $fillable = ['order', 'title', 'type'];
 
     protected $searchableFields = ['*'];
 

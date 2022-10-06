@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', function () {return view('layout/master');});
-Route::get('/', function () {return view('quizzPublic');});
+Route::get('/', function () {return view('go');});
+Route::get('/questions', function () {return view('quizzPublic');})->name('goQuiz');
 Route::get('/results', function () {return view('resultPublic');});
 
 Route::get('/admin/results', [App\Http\Controllers\HomeController::class, 'resultAdmin'])->name('resultAdmin');

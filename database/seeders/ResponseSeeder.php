@@ -15,6 +15,6 @@ class ResponseSeeder extends Seeder
      */
     public function run()
     {
-        Response::factory()->count(5)->create();
+        Response::factory()->count(10)->create();
     }
 }
