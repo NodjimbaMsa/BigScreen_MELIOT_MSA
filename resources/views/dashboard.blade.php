@@ -29,10 +29,10 @@
       </div>
       
       <div class="d-flex justify-content-around flex-wrap flex-md-nowrap">
-        <div id="wrapper">
+        <div class="wrapper">
           <canvas class="my-4 w-100" id="pie3" width="" height="350" aria-label="Hello ARIA World" role="img"></canvas>
         </div>
-        <div id="wrapper">
+        <div class="wrapper">
           <canvas class="my-4 w-100" id="radar1" width="" height="350" aria-label="Hello ARIA World" role="img"></canvas>
         </div>
         
