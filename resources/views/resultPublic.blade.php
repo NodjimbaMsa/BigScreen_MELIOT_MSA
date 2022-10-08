@@ -11,6 +11,21 @@
   .bg-light {
     color: black;
   }
+  .points{
+    border-width: 3px;
+     border-style: dashed;
+      border-color: gray;
+      border-radius: 10px;
+      
+  }
+  @media (max-width: 500px) {
+    .points{
+    border-width: 2px;
+     border-style: dashed;
+      border-color: gray;
+      border-radius: 10px;
+      
+  }}
 </style>
 <div class="bg-light  p-5 rounded mt-3">
 
