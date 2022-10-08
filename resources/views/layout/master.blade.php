@@ -86,7 +86,7 @@
     </style>
 
     
-    <!-- Custom styles for this template -->
+    <!-- Custom styles  -->
     <link href="{{asset('css/cover.css')}}" rel="stylesheet">
     <link href="{{asset('css/questionsPublic.css')}}" rel="stylesheet">
   </head>
@@ -125,7 +125,7 @@
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Quiz BigScreen , by <a href="https://github.com/sebastianmel" class="text-white">Sébastian & Nojimba</a>.</p>
+    <p>Quiz BigScreen , by <a href="https://github.com/sebastianmel" class="text-white" target="blank">Sébastian & Nojimba</a>.</p>
   </footer>
 </div>
 <script src="{{asset('js/questionsPublic.js')}}"></script>

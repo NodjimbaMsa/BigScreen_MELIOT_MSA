@@ -34,15 +34,6 @@ body {
   display: none;
 }
 
-@media (max-width: 767.98px) {
-  .sidebar {
-    top: 5rem;
-  }
-  .navL{
-    display: contents;
-  }
-}
-
 .sidebar-sticky {
   height: calc(100vh - 48px);
   overflow-x: hidden;
@@ -101,4 +92,13 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+  .navL{
+    display: contents;
+  }
 }

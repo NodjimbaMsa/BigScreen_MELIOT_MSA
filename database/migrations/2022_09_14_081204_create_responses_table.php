@@ -17,7 +17,6 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('question_id');
             $table->string('response_text');
-
             $table->timestamps();
         });
     }

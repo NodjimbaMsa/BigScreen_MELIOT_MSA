@@ -7,16 +7,9 @@
 a{
     color: whitesmoke;
 }
-#all{
-    border: none;
-    display: flex;
-    border-radius: 20px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 0px 1px 3px 0px #f0f,
-            1px 2px 4px 0px #f0f,
-            2px 4px 8px 0px #f0f,
-            2px 4px 16px 0px #f0f;
+label{
+    font-size: 20px;
+    
 }
 #buttonAll{
     padding: 80px;
