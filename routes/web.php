@@ -20,7 +20,6 @@ Route::get('/results', function () {return view('resultPublic');});
 
 Route::get('/admin/results', [App\Http\Controllers\HomeController::class, 'resultAdmin'])->name('resultAdmin');
 Route::get('/admin/questions', [App\Http\Controllers\HomeController::class, 'questAdmin'])->name('questAdmin');
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'masterPage'])->name('master');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

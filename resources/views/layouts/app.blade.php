@@ -17,11 +17,6 @@
   <!-- Scripts -->
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
-
-
-
-
-
   <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" crossorigin="anonymous">
 
   <!-- Favicons -->
@@ -32,8 +27,6 @@
   <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
   <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#712cf9">
-
-
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -86,8 +79,6 @@
       -webkit-overflow-scrolling: touch;
     }
   </style>
-
-
   <!-- Custom styles for this template -->
   <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
 </head>
@@ -95,23 +86,16 @@
 <body>
 
   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="{{ url('/') }}">Bigscreen</a>
-
-
     <div class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
       <div class="container">
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Left Side Of Navbar -->
           <ul class="navbar-nav me-auto">
-
           </ul>
-
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ms-auto">
             <!-- Authentication Links -->

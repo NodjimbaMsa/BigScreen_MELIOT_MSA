@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('questions', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('body');
-            $table->enum('type', ['A', 'B', 'C']);
-            $table->string('choices')->nullable();
+        Schema::create('respondent', function (Blueprint $table) {
+            $table->id();
+            $table->string('email');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('respondent');
     }
 };

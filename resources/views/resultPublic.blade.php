@@ -2,12 +2,6 @@
 
 @section('content')
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-/* .btn-neon{
-    
-    font-family: 'Nunito', sans-serif;
-} */
-
   .bg-light {
     color: black;
   }

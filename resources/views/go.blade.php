@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-
+<!-- Btn for start quiz public part -->
 
             <div id="buttonAll">
 
@@ -14,6 +14,4 @@
               </a>
             </div>
         
-    
-  
 @endsection('content')
