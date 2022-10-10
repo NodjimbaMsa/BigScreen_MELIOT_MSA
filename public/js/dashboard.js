@@ -12,28 +12,31 @@
     type: 'pie',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday'
+        'Oculus Quest',
+        'Oculus Rift/s',
+        'HTC Vive',
+        'Windows Mixed'
       ],
       datasets: [{
         data: [
           15339,
-          21345,
-          18483
+          20345,
+          10483,
+          9000
 
         ],
         lineTension: 0,
         backgroundColor: [
           'rgb(255,99,132)',
           'rgb(54,162,235)',
-          'rgb(180,205,86)'
+          'rgb(180,205,86)',
+          'rgb(0,255,0)'
         ],
-       
+
       }]
     },
     options: {
-      
+
       legend: {
         display: true
       }
@@ -47,28 +50,32 @@
     type: 'pie',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday'
+        'Occulus Quest',
+        'Occulus Go',
+        'HTC Vive Pro',
+        'PSVR'
       ],
       datasets: [{
         data: [
-          15339,
-          21345,
-          18483
+          10339,
+          20345,
+          18483,
+          6000
+
 
         ],
         lineTension: 0,
         backgroundColor: [
           'rgb(255,99,132)',
           'rgb(54,162,235)',
-          'rgb(180,205,86)'
+          'rgb(180,205,86)',
+          'rgb(255,0,255)'
         ],
-       
+
       }]
     },
     options: {
-      
+
       legend: {
         display: true
       }
@@ -82,34 +89,40 @@
     type: 'pie',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday'
+        'Regarder la TV en direct',
+        'regarder des films',
+        'travailler',
+        'jouer en solo',
+        'jouer en equipe'
       ],
       datasets: [{
         data: [
           15339,
-          21345,
-          18483
+          20345,
+          8483,
+          4000,
+          6000,
 
         ],
         lineTension: 0,
         backgroundColor: [
           'rgb(255,99,132)',
           'rgb(54,162,235)',
-          'rgb(180,205,86)'
+          'rgb(180,205,86)',
+          'rgb(255,0,0)',
+          'rgb(255,0,255)'
         ],
-       
+
       }]
     },
     options: {
-      
+
       legend: {
         display: true
       }
     }
   })
-    //  RADAR 
+    //  RADAR
 // Graphs
 const ctx = document.getElementById('radar1')
 // eslint-disable-next-line no-unused-vars
@@ -148,15 +161,15 @@ const myChart = new Chart(ctx, {
     }]
   },
   options: {
-  
+
     legend: {
       display: false
     }
   }
 })
-         
-  
-      
+
+
+
 
 })()
 // ICONS
@@ -194,7 +207,7 @@ log-out.replace()
 //           'rgb(54,162,235)',
 //           'rgb(180,205,86)'
 //         ],
-       
+
 //       }]
 //     },
 //     options: {

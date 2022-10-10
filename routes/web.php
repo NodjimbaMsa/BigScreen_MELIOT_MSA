@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {return view('layout/master');});
 Route::get('/', function () {return view('go');});
-Route::get('/questions', function () {return view('quizzPublic');})->name('goQuiz');
-Route::get('/results', function () {return view('resultPublic');});
+Route::get('/questions', [QuestionController::class, 'startQuestion'])->name('startQuestion');
+Route::post('/submitQuestion', [QuestionController::class, 'submitQuestion'])->name('submitQuestion');
+Route::get('/results/{id}',[QuestionController::class, 'resultQuestion'])->whereNumber('id')->name('resultQuestion');
 
 Route::get('/admin/results', [App\Http\Controllers\HomeController::class, 'resultAdmin'])->name('resultAdmin');
 Route::get('/admin/questions', [App\Http\Controllers\HomeController::class, 'questAdmin'])->name('questAdmin');
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'masterPage'])->name('master');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

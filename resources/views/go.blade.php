@@ -1,11 +1,11 @@
 @extends('layout.master')
 
 @section('content')
-<!-- Btn for start quiz public part -->
+
 
             <div id="buttonAll">
 
-              <a href="{{ route('goQuiz') }}" class="btn-neon">
+              <a href="{{ route('startQuestion') }}" class="btn-neon">
                 Start the quiz
                 <svg height="50" width="180">
                   <polyline points="0,0 180,0 180,50 0,50 0,00">
@@ -13,5 +13,7 @@
                 </svg>
               </a>
             </div>
-        
+
+
+
 @endsection('content')

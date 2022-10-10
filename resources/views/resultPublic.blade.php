@@ -2,6 +2,12 @@
 
 @section('content')
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+/* .btn-neon{
+
+    font-family: 'Nunito', sans-serif;
+} */
+
   .bg-light {
     color: black;
   }
@@ -10,7 +16,7 @@
      border-style: dashed;
       border-color: gray;
       border-radius: 10px;
-      
+
   }
   @media (max-width: 500px) {
     .points{
@@ -18,24 +24,30 @@
      border-style: dashed;
       border-color: gray;
       border-radius: 10px;
-      
+
   }}
 </style>
 <div class="bg-light  p-5 rounded mt-3">
 
-  <h2>Question 1/20</h2>
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Votre adresse mail :</label>
-    <div class="points">
-      <input type="email" value="mike@gmail.com" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+@forelse ($questions as $question)
+@forelse ($results as $answer)
+
+<div class="bg-gray-200 p-2 my-2 rounded-md shadow-sm">
+    <h6 class="font-semibold">{{ $question->title }} / 20</h6>
+    <div class="border-dashed border-2 border-gray-800 p-2 my-2">
+        <p>{{ $answer }}</p>
+
+
     </div>
-  </div>
-  <h2>Question 2/20</h2>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Votre âge :</label>
-    <div class="points">
-    <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="18 ans">
-    </div>
-  </div>
 </div>
+
+@empty
+
+<p>Réponses incorrecte</p>
+
+@endforelse
+
+@empty
+<p>Aucune questions...</p>
+@endforelse
 @endsection('content')

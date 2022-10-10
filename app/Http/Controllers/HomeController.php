@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Question;
+use App\Models\Response;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,19 +27,41 @@ class HomeController extends Controller
     {
         return view('home');
     }
-  
+
+    /**
+     * Show the homepage of the application.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function homepage()
+    {
+        return view('layout/master');
+    }
+
+
+
     // public function masterPage()
     // {
     //     return view('layout/master');
     // }
     public function questAdmin()
     {
-        return view('questionsTable');
+        $questions = Question::all();
+
+        return view('questionsTable', compact('questions'));
     }
-  
+
     public function resultAdmin()
     {
-        return view('resultAdmin');
+        $questions = Question::all();
+        $answers = Response::all();
+
+        $link = [];
+
+        foreach($answers as $answer) {
+            $link[$answer->respondent_id]= Response::getByRespondentId($answer->respondent_id);
+        }
+        return view('resultAdmin',['answers' => $link, 'questions' => $questions]);
     }
-  
+
 }

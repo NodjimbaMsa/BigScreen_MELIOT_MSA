@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('question_id')->unsigned()->nullable();
             $table->foreign('question_id')->references('id')->on('questions');
             $table->unsignedBigInteger('respondent_id')->unsigned()->nullable();
-            $table->foreign('respondent_id')->references('id')->on('respondent');
+            $table->foreign('respondent_id')->references('id')->on('respondents');
             $table->string('answer');
 
             $table->timestamps();
