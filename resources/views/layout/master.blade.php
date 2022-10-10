@@ -11,9 +11,9 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
 
-    
 
-    
+
+
 
 <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"  crossorigin="anonymous">
 
@@ -28,6 +28,11 @@
 
 
     <style>
+
+      /* .points{
+        border: 1px dashed grey;
+        margin: 10px;
+      } */
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -80,51 +85,51 @@
       }
     </style>
 
-    
-    <!-- Custom styles for this template -->
+
+    <!-- Custom styles  -->
     <link href="{{asset('css/cover.css')}}" rel="stylesheet">
     <link href="{{asset('css/questionsPublic.css')}}" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
-    
+
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start ">BigScreen</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/">Home</a>
-        <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/results">Results</a>
+        <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="/questions">Questions</a>
         @if (Route::has('login'))
-                
+
                     @auth
                         <a href="{{ url('/dashboard') }}" class="nav-link fw-bold py-1 px-0">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="nav-link fw-bold py-1 px-0">Log in</a>
 
-                        @if (Route::has('register'))
+                        <!-- @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="nav-link fw-bold py-1 px-0">Register</a>
-                        @endif
+                        @endif -->
                     @endauth
-                
+
             @endif
-        
+
       </nav>
     </div>
   </header>
 
   <main class="px-3">
-    <h1>Quizz</h1>
-   
+    <h1>Quiz</h1>
+
     @yield('content')
-    
+
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Quiz BigScreen , by <a href="https://github.com/sebastianmel" class="text-white">Sébastian & Nojimba</a>.</p>
+    <p>Quiz BigScreen , by <a href="https://github.com/sebastianmel" class="text-white" target="blank">Sébastian & Nodjimba</a>.</p>
   </footer>
 </div>
 <script src="{{asset('js/questionsPublic.js')}}"></script>
   </body>
 </html>
 
-       
+

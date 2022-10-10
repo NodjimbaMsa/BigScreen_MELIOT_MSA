@@ -40,7 +40,7 @@ class Response extends Model
 
     public static function getByRespondentId($idRespondent)
     {
-        $responses = self::where('respondentId',$idRespondent)->get();
+        $responses = self::where('respondent_id',$idRespondent)->get();
         return $responses;
     }
 }
